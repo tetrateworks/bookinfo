@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "bookinfo"
+  namespace: "bookinfo"
+  description: "this is bookinfo app"
+  annotations:
+    tetrate.io/tis-cluster: c1
+    argocd/app-name: bookinfo
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/guests"
